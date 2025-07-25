@@ -2,6 +2,7 @@
 
 *{
     background-color: #F5F8FF;
+    max-width: 1440px;
 }
 .noto-serif{
   font-family: "Noto Serif", serif;
@@ -33,13 +34,14 @@ main{
 /* Navbar related styles */
 header{
   margin-top: 10px;
+  margin: auto 150px;
 
 }
 
 .navbar{
   justify-content: space-between;
   align-items: center;
- margin: 0 auto;
+  margin: 0 auto;
   
    
 }
@@ -134,14 +136,15 @@ header{
 .flower-plants{
   display: flex;
   gap: 60px;
-  margin-top: 120px;
+  margin-top: 200px;
 }
 .trusted-badge{
   width: 286px;
   height: auto;
   position: absolute;
-  top: 1800px;
-  left: 430px;
+  top: 1850px;
+  left: 450px;
+  background-color: transparent;
   animation: spin 2s linear infinite;
   
 }
@@ -160,18 +163,108 @@ header{
 }
 .flower-lover{
   width: 540px;
-  margin:auto;
+  
 }
 .flower-lover h2{
   font-weight: 700;
   font-size: 3.2rem;
+  margin: 10px;
 
 }
 /* latest deals */
-.deal-container{
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
+.discount{
+  margin-top: 120px;
 }
+.deals-about{
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: black;
+  margin-top: 120px ;
+  text-align: center;
+}
+.deals-about h2{
+  margin: 16px auto;
+}
+.deals-about p{
+  margin: 0 auto;
+}
+
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.left-cardo {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 23px;
+}
+
+.cardo {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small {
+  height: 200px;
+}
+
+.larg {
+  height: 423px;
+}
+
+.cardo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+
+}
+
+.cardo-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background-color: transparent;
+}
+
+.cardo-content > h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  background-color: transparent;
+}
+
+.cardo-content > p {
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+/* Background images */
+.bloom-plant {
+  background-image: url('../assets/deal-bloom.png');
+}
+
+.ana-plant {
+  background-image: url('../assets/deal-ana.png');
+}
+
+.zabo-plant {
+  background-image: url('../assets/deal-zabo.png');
+}
+
 
 /* letter content */
 .letter-section {
@@ -252,14 +345,35 @@ h1 {
 .foot{
   display: flex;
   justify-content: space-between;
+ 
+  gap: 90px;
+  height: 248px;
+  margin: 50px 130px;
+
+}
+.footer-logo{
+  width: 358px;
 }
 .link-list{
   display: flex;
+  color:rgba(107, 114, 128, 1);
   
 }
 .ul-list{
  list-style: none;
+ 
 }
+.ul-list li{
+  margin-top: 26px;
+}
+.icon-container{
+  margin-top: 26px;
+}
+.icon{
+  margin-left: 16px;
+}
+
+
 
 @media screen and (max-width:576px) {
   .items{
@@ -288,6 +402,26 @@ h1 {
   }
   .trusted-badge{
     display: none;
+  }
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .left-cardo {
+    grid-template-rows: auto;
+  }
+
+  .cardo {
+    height: 180px;
+    flex-direction: column;
+  }
+  .foot{
+    flex-direction: column;
+    justify-content: left;
+  }
+  .link-list{
+    flex-direction: column;
+
   }
   
 }
