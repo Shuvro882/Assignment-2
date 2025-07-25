@@ -347,7 +347,7 @@ h1 {
   justify-content: space-between;
   gap: 90px;
   height: 248px;
-  margin: 20px 150px;
+  margin: 25px 150px;
 
 }
 .footer-logo{
@@ -367,14 +367,14 @@ gap: 10px 60px;
  
 }
 .ul-list li{
-  margin-top: 26px;
+  margin-top: 20px;
 }
 .icon-container{
   margin-top: 26px;
   align-items: center;
 }
 .icon{
-  margin-left: 16px;
+  margin-left: 14px;
 }
 
 
