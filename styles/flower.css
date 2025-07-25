@@ -2,7 +2,7 @@
 
 *{
     background-color: #F5F8FF;
-    max-width: 1440px;
+    
 }
 .noto-serif{
   font-family: "Noto Serif", serif;
@@ -272,7 +272,7 @@ header{
   background-size: cover;
   background-position: center;
   height: 533px;
-  width: 100%;
+  width: 1440px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -355,12 +355,16 @@ h1 {
   width: 358px;
 }
 .link-list{
-  display: flex;
+  
   color:rgba(107, 114, 128, 1);
   
 }
 .ul-list{
  list-style: none;
+ display: grid;
+ grid-auto-flow: column;
+grid-template-rows: repeat(5, auto);
+gap: 10px 80px;
  
 }
 .ul-list li{
@@ -368,6 +372,7 @@ h1 {
 }
 .icon-container{
   margin-top: 26px;
+  align-items: center;
 }
 .icon{
   margin-left: 16px;
@@ -422,6 +427,10 @@ h1 {
   .link-list{
     flex-direction: column;
 
+  }
+  
+  .letter-section{
+    
   }
   
 }
