@@ -33,19 +33,19 @@ main{
 /* Navbar related styles */
 header{
   margin-top: 10px;
+
 }
 
 .navbar{
   justify-content: space-between;
   align-items: center;
-  margin-left: 150px;
-  margin-right: 150px;
+ margin: 0 auto;
   
    
 }
 .nav-item{
   list-style: none;
-  margin-left: 48px;
+  margin-right: 48px;
 }
 .nav-link{
   text-decoration: none;
@@ -138,11 +138,22 @@ header{
 }
 .trusted-badge{
   width: 286px;
+  height: auto;
   position: absolute;
   top: 1800px;
   left: 430px;
+  animation: spin 2s linear infinite;
   
 }
+@keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
 .flower-store{
   width:540px;
   height:570px;
@@ -156,6 +167,99 @@ header{
   font-size: 3.2rem;
 
 }
+/* latest deals */
+.deal-container{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+
+/* letter content */
+.letter-section {
+  background-image: url('../assets/news-letter-bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 533px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.contents {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: transparent;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+  background-color: transparent;
+}
+
+.email-form {
+  display: flex;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.email-form input[type="email"] {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+}
+
+.email-form input::placeholder {
+  color: #666;
+}
+
+.email-form button {
+  padding: 12px 20px;
+  background-color: #E95A08;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+/* footer */
+.foot{
+  display: flex;
+  justify-content: space-between;
+}
+.link-list{
+  display: flex;
+  
+}
+.ul-list{
+ list-style: none;
+}
 
 @media screen and (max-width:576px) {
   .items{
@@ -163,6 +267,7 @@ header{
   }
   .navbar{
   justify-content: space-between;
+  width: 100%;
   }
 
   .hero-banner{
