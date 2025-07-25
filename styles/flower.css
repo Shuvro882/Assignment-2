@@ -47,7 +47,7 @@ header{
 }
 .nav-item{
   list-style: none;
-  margin-right: 48px;
+  margin-left: 48px;
 }
 .nav-link{
   text-decoration: none;
@@ -65,10 +65,6 @@ header{
   font-size: 1.25rem;
   color: black;
 }
-/* hero-banner */
-/* .banner-container{
- width: 1140px;
-} */
 .hero-banner{
   justify-content: space-between;
   align-items: center;
@@ -267,17 +263,21 @@ header{
 
 
 /* letter content */
+.letters{
+  max-width: 1440px;
+}
 .letter-section {
   background-image: url('../assets/news-letter-bg.png');
   background-size: cover;
   background-position: center;
-  height: 533px;
+  height: 600px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
+  
 }
 
 .overlay {
@@ -292,7 +292,7 @@ header{
 .contents {
   position: relative;
   z-index: 2;
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
   padding: 20px;
   background-color: transparent;
@@ -345,14 +345,13 @@ h1 {
 .foot{
   display: flex;
   justify-content: space-between;
- 
   gap: 90px;
   height: 248px;
-  margin: 50px 140px;
+  margin: 20px 150px;
 
 }
 .footer-logo{
-  width: 358px;
+  width: 340px;
 }
 .link-list{
   
@@ -364,7 +363,7 @@ h1 {
  display: grid;
  grid-auto-flow: column;
 grid-template-rows: repeat(5, auto);
-gap: 10px 80px;
+gap: 10px 60px;
  
 }
 .ul-list li{
@@ -424,6 +423,7 @@ gap: 10px 80px;
   .foot{
     flex-direction: column;
     justify-content: left;
+    margin-top: 5px;
   }
   .link-list{
     flex-direction: column;
@@ -431,7 +431,7 @@ gap: 10px 80px;
   }
   
   .foot{
-    margin: 30px auto;
+    margin: 5px auto;
     
   }
   .ul-list{
@@ -439,8 +439,15 @@ gap: 10px 80px;
     grid-auto-flow: row;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    margin-top: 0;
+  
   
   }
+  .icon-container{
+  margin-top: 0;
+  
+}
+  
   header{
     margin: 0 auto;
   }
