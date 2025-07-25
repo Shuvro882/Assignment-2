@@ -18,7 +18,7 @@
 }
 main{
   max-width: 1140px;
-  margin: 120px auto;
+  margin: 150px auto;
 }
 
 .orange{
@@ -34,8 +34,8 @@ main{
 /* Navbar related styles */
 header{
   margin-top: 10px;
-  margin: auto 150px;
-
+  margin-left:150px;
+  margin-right:150px;
 }
 
 .navbar{
@@ -66,9 +66,9 @@ header{
   color: black;
 }
 /* hero-banner */
-.banner-container{
- max-width: 1140px;
-}
+/* .banner-container{
+ width: 1140px;
+} */
 .hero-banner{
   justify-content: space-between;
   align-items: center;
@@ -76,7 +76,7 @@ header{
   display: flex;
 }
 .banner{
-  max-width: 570px; 
+  width: 570px; 
 }
 
 .hero{
@@ -272,7 +272,7 @@ header{
   background-size: cover;
   background-position: center;
   height: 533px;
-  width: 1440px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -348,7 +348,7 @@ h1 {
  
   gap: 90px;
   height: 248px;
-  margin: 50px 130px;
+  margin: 50px 140px;
 
 }
 .footer-logo{
@@ -387,6 +387,7 @@ gap: 10px 80px;
   .navbar{
   justify-content: space-between;
   width: 100%;
+  
   }
 
   .hero-banner{
@@ -429,8 +430,19 @@ gap: 10px 80px;
 
   }
   
-  .letter-section{
+  .foot{
+    margin: 30px auto;
     
+  }
+  .ul-list{
+    
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  
+  }
+  header{
+    margin: 0 auto;
   }
   
 }
